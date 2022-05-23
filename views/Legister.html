@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+  <link rel="stylesheet" href="../../static/css/me.css">
+  <link rel="stylesheet" href="../../static/css/login.css">
+</head>
+<body>
+
+<body>
+
+  {{template "p/footer.html" .}}
+
+
+</head>
+<body>
+	<form  class="login_form"  name = "login" action="/Legister" method="post">
+	<div id="login-box">
+	    <h1 class="login_title">用户注册</h1>
+	    <div class="form">
+	<div class="item">
+		<i class="github alternate icon"></i>
+	    <input type="text"  class="input_txt" placeholder="账号"name = "userName" value="{{.userName}}">
+	</div>
+	<div class="item">
+                <i class="linux icon"></i>
+	    <input type="password" name = "passWord" placeholder="密码" class="input_txt">
+	 </div> 
+	<button>注册</button>
+	    <span>{{.errmsg}}</span>
+	 
+	</div>
+	</div>
+	</form>
+    
+    </body>
+    
+    
